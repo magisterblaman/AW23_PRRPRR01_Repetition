@@ -78,7 +78,7 @@ namespace AW23_PRRPRR01_Repetition {
 			for (int i = 10; i >= 0; i--) {
 				Console.WriteLine(i);
 			}
-			for (int i = 0; i <= 10; i+=2) {
+			for (int i = 0; i <= 10; i += 2) {
 				Console.WriteLine(i);
 			}
 
@@ -130,6 +130,27 @@ namespace AW23_PRRPRR01_Repetition {
 			Console.WriteLine(person1.lastName);
 
 			Console.WriteLine(person1.firstName + " " + person1.lastName + " (" + person1.age + ")");
+
+
+			for (int i = 0; i < 10; i++) {
+				for (int j = 0; j < i; j++) {
+					Console.Write('*');
+				}
+				Console.WriteLine();
+			}
+
+			int[,] intGrid = new int[9, 4];
+			intGrid[0, 0] = 100;
+			intGrid[8, 3] = -100;
+
+			for (int y = 0; y < intGrid.GetLength(1); y++) {
+				for (int x = 0; x < intGrid.GetLength(0); x++) {
+					Console.Write(intGrid[x, y] + " ");
+				}
+				Console.WriteLine();
+			}
+
+			// samt användargränssnitt i någon form, t.ex. kommandosystem
 		}
 
 		static void PrintHello() { // funktionsdeklaration
